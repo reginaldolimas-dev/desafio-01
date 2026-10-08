@@ -69,3 +69,223 @@ a:hover, a:focus {
     outline: 2px dashed var(--cor-primaria);
     outline-offset: 2px;
 }
+
+/* ==========================================================================
+   ETAPA 3: CONSTRUÇÃO DOS COMPONENTES E LAYOUT DAS SEÇÕES
+   ========================================================================== */
+
+/* LAYOUT BASE E CONTAINERS */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 4rem 0;
+}
+
+.alt-bg {
+    background-color: rgba(42, 157, 143, 0.05);
+}
+
+/* BOTÕES */
+.btn {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: var(--transicao);
+    text-align: center;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #d97b21;
+    outline: 2px solid var(--cor-secundaria);
+    outline-offset: 2px;
+}
+
+/* HEADER E NAVEGAÇÃO (FLEXBOX BASE) */
+header {
+    background-color: var(--cor-branco);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Já garante o layout flexível */
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-menu a {
+    color: var(--cor-texto);
+    font-weight: 700;
+}
+
+.nav-menu a:hover, .nav-menu a:focus {
+    color: var(--cor-primaria);
+}
+
+/* HERO SECTION */
+.hero-section {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.hero-section h1 {
+    color: var(--cor-branco);
+    font-size: 2.2rem;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section .btn {
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+}
+
+.hero-section .btn:hover, .hero-section .btn:focus {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+
+/* SEÇÃO SOBRE */
+.sobre-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sobre-grid article {
+    background-color: var(--cor-branco);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* SEÇÃO ADOÇÃO (GRID DE CARDS) */
+.section-desc {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Layout em coluna única inicial (Mobile-first) */
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--cor-branco);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de Interação (Etapa 3) */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover; /* Evita distorções */
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+/* SEÇÃO GALERIA (GRID DE IMAGENS) */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    aspect-ratio: 1/1; /* Quadrados perfeitos */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+figure:hover img {
+    transform: scale(1.05);
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(59, 47, 47, 0.8);
+    color: var(--cor-branco);
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0; /* Invisível por padrão */
+    transition: opacity 0.3s ease;
+}
+
+/* Efeito de Interação (Etapa 3) */
+figure:hover figcaption {
+    opacity: 1; /* Fica visível ao passar o mouse */
+}
+
+/* SEÇÃO CONTATO */
+.contato-content {
+    text-align: center;
+}
+
+.contato-info {
+    font-style: normal;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--cor-texto);
+    color: var(--cor-fundo);
+    text-align: center;
+    padding: 2rem 0;
+}

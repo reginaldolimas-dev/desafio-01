@@ -4,111 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patas Amigas - Adoção e Proteção Animal</title>
-    <!-- Fontes importadas conforme a Etapa 1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Link para o CSS da Etapa 2 -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href="#">Patas Amigas</a>
-        <nav aria-label="Menu Principal">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#adocao">Adoção</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <a href="#" class="logo">Patas Amigas</a>
+            <nav aria-label="Menu Principal">
+                <ul class="nav-menu">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#adocao">Adoção</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="hero">
-            <h1>Amor não se compra, se adota.</h1>
-            <p>Encontre o seu novo melhor amigo e transforme duas vidas: a sua e a dele.</p>
-            <a href="#adocao">Quero adotar</a>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1>Amor não se compra, se adota.</h1>
+                <p>Encontre o seu novo melhor amigo e transforme duas vidas: a sua e a dele.</p>
+                <a href="#adocao" class="btn">Quero adotar</a>
+            </div>
         </section>
 
-        <section id="sobre">
-            <h2>Quem Somos</h2>
-            <article>
-                <h3>Nossa Missão</h3>
-                <p>A "Patas Amigas" dedica-se a resgatar animais em situação de abandono, provendo cuidados veterinários, reabilitação e buscando lares amorosos. Acreditamos que todo animal merece uma segunda chance e uma família que o ame incondicionalmente.</p>
-            </article>
-            <article>
-                <h3>Nossa História</h3>
-                <p>Fundada em 2018 por um grupo de voluntários apaixonados por pets, começamos resgatando cães e gatos em nossa própria vizinhança. Hoje, contamos com uma rede de lares temporários e já ajudamos mais de 500 animais a encontrarem suas famílias definitivas.</p>
-            </article>
+        <section id="sobre" class="section-padding">
+            <div class="container">
+                <h2>Quem Somos</h2>
+                <div class="sobre-grid">
+                    <article>
+                        <h3>Nossa Missão</h3>
+                        <p>A "Patas Amigas" dedica-se a resgatar animais em situação de abandono, provendo cuidados veterinários, reabilitação e buscando lares amorosos. Acreditamos que todo animal merece uma segunda chance e uma família que o ame incondicionalmente.</p>
+                    </article>
+                    <article>
+                        <h3>Nossa História</h3>
+                        <p>Fundada em 2018 por um grupo de voluntários apaixonados por pets, começamos resgatando cães e gatos em nossa própria vizinhança. Hoje, contamos com uma rede de lares temporários e já ajudamos mais de 500 animais a encontrarem suas famílias definitivas.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="adocao">
-            <h2>Animais para Adoção</h2>
-            <p>Eles estão esperando por você. Conheça nossos amigos de quatro patas!</p>
-            
-            <article>
-                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=600&auto=format&fit=crop" alt="Cachorro vira-lata caramelo de porte médio sorrindo com a língua de fora">
-                <h3>Paçoca</h3>
-                <p>Cãozinho muito dócil e brincalhão. Adora correr no parque e se dá bem com crianças.</p>
-            </article>
-            
-            <article>
-                <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?q=80&w=600&auto=format&fit=crop" alt="Gata branca e preta (frajola) deitada em uma almofada olhando fixamente">
-                <h3>Luna</h3>
-                <p>Gatinha carinhosa e independente. Gosta de caixas de papelão e sonecas à tarde.</p>
-            </article>
-            
-            <article>
-                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=600&auto=format&fit=crop" alt="Cachorro poodle branco de pequeno porte usando uma bandana vermelha">
-                <h3>Bolinha</h3>
-                <p>Filhote cheio de energia. Precisa de espaço para gastar sua alegria. Ideal para casas grandes.</p>
-            </article>
+        <section id="adocao" class="alt-bg section-padding">
+            <div class="container">
+                <h2>Animais para Adoção</h2>
+                <p class="section-desc">Eles estão esperando por você. Conheça nossos amigos de quatro patas!</p>
+                
+                <div class="cards-grid">
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=600&auto=format&fit=crop" alt="Cachorro vira-lata caramelo de porte médio sorrindo com a língua de fora">
+                        <div class="card-content">
+                            <h3>Paçoca</h3>
+                            <p>Cãozinho muito dócil e brincalhão. Adora correr no parque e se dá bem com crianças.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?q=80&w=600&auto=format&fit=crop" alt="Gata branca e preta (frajola) deitada em uma almofada olhando fixamente">
+                        <div class="card-content">
+                            <h3>Luna</h3>
+                            <p>Gatinha carinhosa e independente. Gosta de caixas de papelão e sonecas à tarde.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=600&auto=format&fit=crop" alt="Cachorro poodle branco de pequeno porte usando uma bandana vermelha">
+                        <div class="card-content">
+                            <h3>Bolinha</h3>
+                            <p>Filhote cheio de energia. Precisa de espaço para gastar sua alegria. Ideal para casas grandes.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="galeria">
-            <h2>Nossos Resgatados Felizes</h2>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?q=80&w=600&auto=format&fit=crop" alt="Criança abraçando um cachorro dourado">
-                <figcaption>O primeiro encontro</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=600&auto=format&fit=crop" alt="Gato dormindo enrolado em um cobertor">
-                <figcaption>Conforto merecido</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=600&auto=format&fit=crop" alt="Três cachorros correndo em um gramado">
-                <figcaption>Hora de brincar!</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=600&auto=format&fit=crop" alt="Mulher sorrindo segurando um gatinho">
-                <figcaption>Muito amor envolvido</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=600&auto=format&fit=crop" alt="Cachorro atento interagindo e olhando para cima">
-                <figcaption>Amizade fiel</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?q=80&w=600&auto=format&fit=crop" alt="Gato observando a rua pela janela">
-                <figcaption>Apenas observando</figcaption>
-            </figure>
+        <section id="galeria" class="section-padding">
+            <div class="container">
+                <h2>Nossos Resgatados Felizes</h2>
+                <div class="galeria-grid">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?q=80&w=600&auto=format&fit=crop" alt="Criança abraçando um cachorro dourado">
+                        <figcaption>O primeiro encontro</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=600&auto=format&fit=crop" alt="Gato dormindo enrolado em um cobertor">
+                        <figcaption>Conforto merecido</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=600&auto=format&fit=crop" alt="Três cachorros correndo em um gramado">
+                        <figcaption>Hora de brincar!</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=600&auto=format&fit=crop" alt="Mulher sorrindo segurando um gatinho">
+                        <figcaption>Muito amor envolvido</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=600&auto=format&fit=crop" alt="Cachorro atento interagindo e olhando para cima">
+                        <figcaption>Amizade fiel</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?q=80&w=600&auto=format&fit=crop" alt="Gato observando a rua pela janela">
+                        <figcaption>Apenas observando</figcaption>
+                    </figure>
+                </div>
+            </div>
         </section>
 
-        <section id="contato">
-            <h2>Como Ajudar e Contato</h2>
-            <p>Quer adotar, ser lar temporário ou fazer uma doação? Fale conosco!</p>
-            <address>
-                <p><strong>Endereço:</strong> Rua dos Animais Felizes, 123 - Centro, São Paulo - SP</p>
-                <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511999999999">(11) 99999-9999</a></p>
-                <p><strong>E-mail:</strong> <a href="mailto:contato@patasamigas.org">contato@patasamigas.org</a></p>
-                <p><strong>Instagram:</strong> <a href="https://instagram.com/patasamigas" target="_blank" rel="noopener noreferrer">@patasamigas</a></p>
-            </address>
+        <section id="contato" class="alt-bg section-padding">
+            <div class="container">
+                <h2>Como Ajudar e Contato</h2>
+                <div class="contato-content">
+                    <p>Quer adotar, ser lar temporário ou fazer uma doação? Fale conosco!</p>
+                    <address class="contato-info">
+                        <p><strong>Endereço:</strong> Rua dos Animais Felizes, 123 - Centro, São Paulo - SP</p>
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511999999999">(11) 99999-9999</a></p>
+                        <p><strong>E-mail:</strong> <a href="mailto:contato@patasamigas.org">contato@patasamigas.org</a></p>
+                        <p><strong>Instagram:</strong> <a href="https://instagram.com/patasamigas" target="_blank" rel="noopener noreferrer">@patasamigas</a></p>
+                    </address>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Patas Amigas. Todos os direitos reservados. Projeto Acadêmico.</p>
+        <div class="container footer-content">
+            <p>&copy; 2024 Patas Amigas. Todos os direitos reservados. Projeto Acadêmico.</p>
+        </div>
     </footer>
 </body>
 </html>
