@@ -1,0 +1,71 @@
+/* ==========================================================================
+   ETAPA 2: ESTILO BASE E DESIGN SYSTEM
+   ========================================================================== */
+
+/* 1. VARIÁVEIS CSS (PALETA DE CORES E FONTES) */
+:root {
+    /* Paleta exigida pelo projeto */
+    --cor-primaria: #F28C28; /* Laranja */
+    --cor-secundaria: #2A9D8F; /* Verde-água */
+    --cor-fundo: #FFF8F0; /* Creme */
+    --cor-texto: #3B2F2F; /* Marrom Escuro */
+    
+    /* Variáveis auxiliares */
+    --cor-branco: #FFFFFF;
+    --fonte-principal: 'Nunito', sans-serif;
+    --transicao: all 0.3s ease;
+}
+
+/* 2. RESET CSS BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. CONFIGURAÇÕES GLOBAIS DE PÁGINA E NAVEGAÇÃO */
+html {
+    scroll-behavior: smooth; /* Efeito deslizante ao clicar nos links do menu */
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* 4. IMAGENS BASE (Evitando que vazem da tela desde já) */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 5. TIPOGRAFIA E LINKS GERAIS */
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--cor-texto);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Estilização base de acessibilidade visual para Links */
+a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    transition: var(--transicao);
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    outline: 2px dashed var(--cor-primaria);
+    outline-offset: 2px;
+}
