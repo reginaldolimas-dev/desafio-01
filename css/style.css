@@ -289,3 +289,48 @@ footer {
     text-align: center;
     padding: 2rem 0;
 }
+
+/* ==========================================================================
+   ETAPA 4: RESPONSIVIDADE (MEDIA QUERIES)
+   ========================================================================== */
+
+/* Tablet (Telas médias: a partir de 768px) */
+@media (min-width: 768px) {
+    /* O Header passa a ficar na mesma linha, separando logo e menu (Space-between) */
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+
+    /* A seção Sobre passa a ter as duas caixas lado a lado */
+    .sobre-grid {
+        flex-direction: row;
+    }
+    
+    .sobre-grid article {
+        flex: 1; /* Divisão igualitária do espaço */
+    }
+
+    /* Cards e Galeria ganham 2 colunas para aproveitar a tela do tablet */
+    .cards-grid, .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Aumenta levemente a fonte de impacto no Hero */
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Desktop (Telas grandes: a partir de 1024px) */
+@media (min-width: 1024px) {
+    /* Cards e Galeria passam para 3 colunas, explorando a tela cheia do computador */
+    .cards-grid, .galeria-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+}
